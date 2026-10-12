@@ -19,13 +19,19 @@ const STORAGE_KEY = "stinger-spiritborn-storms-push-v1";
 const SOURCE_URL = "https://maxroll.gg/d4/build-guides/stinger-spiritborn-guide";
 
 // TODO: legg disse filene i public/items/
+const itemImage = (filename) =>
+  `${import.meta.env.BASE_URL}items/${filename}`;
+
 const ITEM_IMAGES = {
-  kepeleke: "/items/rod-of-kepeleke.webp",
-  "midnight-sun": "/items/midnight-sun.webp",
-  starless: "/items/starless-skies.webp",
-  ebewaka: "/items/ebewaka.webp",
-  hesha: "/items/hesha.webp",
-  tibault: "/items/tibault.webp"
+  kepeleke: itemImage("rod-of-kepeleke.webp"),
+  "midnight-sun": itemImage("midnight-sun.webp"),
+  starless: itemImage("starless-skies.webp"),
+  ebewaka: itemImage("ebewaka.webp"),
+  hesha: itemImage("hesha.webp"),
+  tibault: itemImage("tibault.webp"),
+  gloves: itemImage("legendary-gloves.webp"),
+  amulet: itemImage("legendary-amulet.webp"),
+  boots: itemImage("legendary-boots.webp"),
 };
 
 
